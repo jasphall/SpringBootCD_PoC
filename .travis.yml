@@ -14,6 +14,6 @@ env:
 after_success:
   - docker login -u $DOCKER_USER -p $DOCKER_PASS
   - export REPO=jasphall/springbootcd_poc
-  - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
+  - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH | tr / - ; fi`
   - docker build -f Dockerfile -t $REPO:$TAG .
   - docker push $REPO
