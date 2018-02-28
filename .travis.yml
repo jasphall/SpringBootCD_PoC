@@ -6,5 +6,5 @@ services:
   - docker
 
 after_success:
-  - docker build -t springboot/poc .
-  - docker push springboot/poc
+  - docker build -t jasphall/springbootcd_poc .
+  - docker push jasphall/springbootcd_poc
