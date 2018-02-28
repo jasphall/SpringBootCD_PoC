@@ -8,3 +8,4 @@ services:
 after_success:
   - docker build -t jasphall/springbootcd_poc .
   - docker push jasphall/springbootcd_poc
+
