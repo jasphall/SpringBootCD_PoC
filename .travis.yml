@@ -7,3 +7,4 @@ services:
 
 after_success:
   - docker build -t springboot/poc .
+  - docker push springboot/poc
