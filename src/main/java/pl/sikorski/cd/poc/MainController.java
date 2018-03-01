@@ -13,4 +13,9 @@ public class MainController {
         return "Hello!";
     }
 
+    @GetMapping("/v2")
+    public String helloInstance() {
+        return "Hello from Instance!";
+    }
+
 }
