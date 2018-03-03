@@ -10,7 +10,7 @@ public class MainController {
 
     @GetMapping
     public String hello() {
-        return "Hello!";
+        return "Hello from brand new deployment!";
     }
 
     @GetMapping("/v2")
