@@ -16,7 +16,7 @@ public class MainController {
     @GetMapping("/v2")
     public String helloInstance() {
         System.out.println("Hello");
-        return "Hello from Instance111!";
+        return "Hello from Instance111222!";
     }
 
 }
