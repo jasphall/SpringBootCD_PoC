@@ -15,7 +15,7 @@ public class MainController {
 
     @GetMapping("/v2")
     public String helloInstance() {
-        return "Finally hello v5!";
+        return "Finally hello v6!";
     }
 
 }
